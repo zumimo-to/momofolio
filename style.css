@@ -29,8 +29,15 @@ header {
   background: #EEE;
 }
 header h1 {
-  text-align: center;
   padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 1rem;
+}
+nav {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
 }
 nav ul {
   padding-bottom: 1rem;
@@ -45,6 +52,8 @@ nav ul li a {
   color: #333;
 }
 
+
+/* メイン */
 main {
   padding: 1rem;
   max-width: 1200px;
