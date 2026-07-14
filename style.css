@@ -7,41 +7,60 @@
   box-sizing: border-box;
 }
 
-img {
-  width: 100%;
-  height: auto;
-  vertical-align: bottom;
+  html {
+    scroll-behavior: smooth;
 }
 
-body {
+/* body {
   height: 100%;
-}
+} */
 
-#wrap {
+* #wrap {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-}
+} *
 
 
 /*ヘッダ-*/
-header {
-  background: #EEE;
+#home {
+  background-color: #005f7c;
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+    padding-top: 80px; /* ヘッダーの高さ分のパディング */
+    color: rgb(255, 255, 255);
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 3.5rem;
+    align-items: center;
+    font-size: 2.5rem;
+    position: relative; 
+    overflow: hidden;
 }
-header h1 {
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+/* header h1 {
   padding: 1rem;
   position: absolute;
-  top: 0;
-  left: 1rem;
-}
+  top: 8rem;
+  left: 2rem;
+} */
 nav {
   position: absolute;
   top: 2rem;
   right: 1rem;
+  
 }
 nav ul {
   padding-bottom: 1rem;
   text-align: center;
+  padding-right: 1rem
 }
 nav ul li {
   display: inline-block;
@@ -49,40 +68,49 @@ nav ul li {
 }
 nav ul li a {
   font-weight: bold;
-  color: #333;
+  color: #ffffff;
 }
+
+
+
 
 
 /* メイン */
-main {
-  padding: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-grow: 1;
+.section {
+  padding: 80px ;
+  min-height: 100vh;
+   color: rgb(255, 255, 255);
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 3.5rem;
+    position: relative; 
+    overflow: hidden;
 }
-section {
-  background: #FFF;
-    padding: 20px;
+#about {
+  background-color: #92c2d4;
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+#works {
+  background-color: #6baabf;
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+#contact{
+  background-color: #007396;
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
 }
 
-.container{
-  display: flex;
-  gap: 20px;
-  flex-direction: row-reverse;
-}
-
-.column-img {
-  flex: 1;
-}
-
-.column-text {
-  flex: 2;
-}
 
 footer {
-  background: #333;
+  background: #005f7c;
     color: #FFF;
   text-align: center;
   padding: 1rem;
   width: 100%;
 }
+
