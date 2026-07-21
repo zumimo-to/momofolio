@@ -281,7 +281,7 @@ title {
 .instagram-btn img {
   width: 24px;
   height: 24px;
-  margin-top: 8px; /* 文字との間隔 */
+  margin-top: 30px; /* 文字との間隔 */
   align-self: center; /* アイコンを中央に配置 */
 }
 
