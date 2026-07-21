@@ -45,12 +45,6 @@ header {
   width: 100%;
   z-index: 1000;
 }
-/* header h1 {
-  padding: 1rem;
-  position: absolute;
-  top: 8rem;
-  left: 2rem;
-} */
 nav {
   position: absolute;
   top: 2rem;
@@ -86,23 +80,218 @@ nav ul li a {
     position: relative; 
     overflow: hidden;
 }
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+
+/* アバウト */
+.aicon{
+
+  width:300px; 
+  height: 300px;
+  
+}
+.info{
+  margin:auto 60px;
+}
+
 #about {
   background-color: #92c2d4;
   width: 100%;
   height: auto;
   vertical-align: bottom;
+  
 }
+.about h2{
+  align-items: center;
+  justify-content: center;
+  display:flex;
+    align-items:center;
+    gap:40px;
+    max-width:1000px;
+    margin:0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+    .aicon{
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+  .aicon {
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .info {
+    margin: 0;
+  }
+}
+
+
+
+/* ワークス */
 #works {
   background-color: #6baabf;
   width: 100%;
   height: auto;
   vertical-align: bottom;
 }
-#contact{
+  /* ギャラリーレイアウト */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+  gap: 20px; 
+  margin-top: 60px;
+
+
+    max-width:1400px;
+    margin:80px auto;
+    padding:0 20px;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:60px;
+}
+
+.work-card{
+    width:100%;
+}
+
+.work-image{
+    display:block;
+    overflow:hidden;
+}
+
+.work-image img{
+
+    width:100%;
+    aspect-ratio: 16/9;
+
+    object-fit: cover;
+    display: block;
+
+    transition: transform 0.4s;
+
+}
+
+.work-image:hover img{
+    transform:scale(1.05);
+}
+
+
+/* 各作品カード */
+.work-content {
+  padding: 50px 0 ;
+
+}
+.work-card {
+  position: relative; 
+  overflow: hidden; 
+  display: block; 
+  text-decoration: none; 
+  color: inherit; 
+  transition: transform 0.3s ease; 
+}
+
+.work-card:hover {
+  transform: translateY(-5px); /* ホバーエフェクト */
+}
+
+.work-card img {
+  width: 100%;
+  height: auto;
+  display: block; 
+  transition: transform 0.3s ease; 
+}
+
+title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.year {
+  font-size: 0.9rem;
+  margin-top: 30px;
+
+}
+/* スマホ */
+
+@media (max-width:768px){
+
+    .gallery{
+
+        grid-template-columns:1fr;
+        padding:0 20px;
+        gap:50px;
+
+    }
+
+}
+
+
+
+
+
+
+/* コンタクト */
+#contact {
   background-color: #007396;
   width: 100%;
   height: auto;
-  vertical-align: bottom;
+}
+
+.instagram-btn {
+  display: flex;
+  flex-direction: column; /* 文字とアイコンを縦並び */
+  align-items: center;
+  justify-content: center;
+
+  width: 320px;
+  height: 60px; 
+
+  background: #fff;
+  border: 1px solid #7a7c7d;
+  border-radius: 8px;
+
+  color: #007396;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.instagram-btn img {
+  width: 24px;
+  height: 24px;
+  margin-top: 8px; /* 文字との間隔 */
+  align-self: center; /* アイコンを中央に配置 */
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 縦方向の中央寄せ */
+  align-items: center;     /* 横方向の中央寄せ */
+  margin:auto
+
 }
 
 
