@@ -90,7 +90,10 @@ nav ul li a {
   padding: 0 20px;
 }
 @media screen and (max-width:768px){
-
+#home {
+    padding-top: 60px; /* ヘッダーの高さ分のパディング */
+    font-size: 2rem;
+  }
   .section{
     padding:60px 30px;
     padding-left:30px;
@@ -103,7 +106,10 @@ nav ul li a {
 
 }
 @media screen and (max-width:375px){
-
+#home {
+    padding-top: 50px; /* ヘッダーの高さ分のパディング */
+    font-size: 1.5rem;
+  }
   .section{
     padding:40px 20px;
     padding-left:20px;
