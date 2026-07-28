@@ -261,12 +261,14 @@ title {
 
 .instagram-btn {
   display: flex;
-  flex-direction: column; /* 文字とアイコンを縦並び */
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  gap: 8px;
 
   width: 320px;
-  height: 60px; 
+  min-height: 80px;
 
   background: #fff;
   border: 1px solid #7a7c7d;
@@ -276,13 +278,8 @@ title {
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
-}
 
-.instagram-btn img {
-  width: 24px;
-  height: 24px;
-  margin-top: 30px; /* 文字との間隔 */
-  align-self: center; /* アイコンを中央に配置 */
+  text-align: center;
 }
 
 .contact-content {
@@ -291,6 +288,47 @@ title {
   justify-content: center; /* 縦方向の中央寄せ */
   align-items: center;     /* 横方向の中央寄せ */
   margin:auto
+
+}
+
+@media screen and (max-width: 768px) {
+
+  #contact {
+    padding: 60px 20px;
+  }
+
+  .instagram-btn {
+    width: 280px;
+    font-size: 16px;
+  }
+  .contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 縦方向の中央寄せ */
+  align-items: center;     /* 横方向の中央寄せ */
+  margin:auto
+}
+
+}
+@media screen and (max-width: 375px) {
+
+  #contact {
+    padding: 40px 15px;
+  }
+
+  .instagram-btn {
+    width: 90%;
+    max-width: 300px;
+    min-height: 70px;
+    font-size: 15px;
+  }
+   .contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 縦方向の中央寄せ */
+  align-items: center;     /* 横方向の中央寄せ */
+  margin:auto
+}
 
 }
 
@@ -303,3 +341,54 @@ footer {
   width: 100%;
 }
 
+
+
+/* 作品ページ */
+.wrapper {
+    background: #6baabf;
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ap {
+    width: 50%;
+}
+
+.ap img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding-bottom: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        padding: 80px 20px;
+    }
+
+    .ap {
+        width: 70%;
+        padding-bottom: 20px;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .wrapper {
+        padding: 50px 15px;
+    }
+
+    .ap {
+        width: 90%;
+        padding-bottom: 20px;
+    }
+
+}
