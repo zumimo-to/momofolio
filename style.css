@@ -340,7 +340,6 @@ title {
   flex-direction: column;
   justify-content: center; /* 縦方向の中央寄せ */
   align-items: center;     /* 横方向の中央寄せ */
-  margin:auto
 }
 
 }
@@ -361,7 +360,7 @@ title {
   flex-direction: column;
   justify-content: center; /* 縦方向の中央寄せ */
   align-items: center;     /* 横方向の中央寄せ */
-  margin:auto
+
 }
 
 }
